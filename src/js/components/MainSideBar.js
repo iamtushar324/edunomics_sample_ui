@@ -4,8 +4,20 @@ export default class MainSideBar extends React.Component {
 	render() {
 		return (
 			<div className="MainSideBar">
-				<li>Home</li>
-				<li>Session</li>
+				<li
+					onClick={() => {
+						this.props.goto('home');
+					}}
+				>
+					Home
+				</li>
+				<li
+					onClick={() => {
+						this.props.goto('session');
+					}}
+				>
+					Session
+				</li>
 				<li>Downloads</li>
 				<li>Setting</li>
 				<li>About</li>

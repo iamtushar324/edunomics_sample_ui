@@ -33,9 +33,10 @@
 .btn {
     display: inline;
     list-style: none;
-    padding: 4px 7px;
+    padding: 5px 9px;
     cursor: pointer;
     margin-left: 10px;
+    font-size: 1rem;
 }
 .sign_btn {
     border: solid 2px white;
@@ -45,8 +46,8 @@
 // LoginBox css
 
 .LoginBox {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 190px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -55,6 +56,20 @@
     float: right;
 
     input {
-        // height: 15px;
+        height: 18px;
+        width: 200px;
+    }
+    button {
+        padding: 5px 15px;
+        background-color: transparent;
+        outline: none;
+        border: solid 1px white;
+        color: white;
+        border-radius: 10px;
+        transform: translateX(80%);
+    }
+    button:hover {
+        background-color: white;
+        color: black;
     }
 }

@@ -2,6 +2,9 @@ import React from 'react';
 import LoginBox from './LoginBox';
 
 export default class LandingTop extends React.Component {
+	signup = () => {
+		window.location.href = '/sign-up';
+	};
 	loginToggle = () => {
 		this.setState((prev) => {
 			return {
@@ -28,7 +31,9 @@ export default class LandingTop extends React.Component {
 						<li className="btn log_btn" onClick={this.loginToggle}>
 							Log In
 						</li>
-						<li className="btn sign_btn">Sign Up</li>
+						<li className="btn sign_btn" onClick={this.signup}>
+							Sign Up
+						</li>
 					</div>
 				</div>
 				{this.state.islogin ? <LoginBox main={this.props.main} /> : null}

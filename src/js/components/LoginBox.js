@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default class LoginBox extends React.Component {
+	dashboard = () => {
+		window.location.href = '/DashBoard';
+	};
 	render() {
 		return (
 			<div className="LoginBox">
@@ -8,7 +11,9 @@ export default class LoginBox extends React.Component {
 				<input type="text" id="login_username" />
 				<label htmlFor="username">Password</label>
 				<input type="text" id="login_password" />
-				<input onClick={this.props.main} type="button" value="Login" className="btn" />
+				<button onClick={this.dashboard} className="btn">
+					Login
+				</button>
 			</div>
 		);
 	}

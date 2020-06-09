@@ -4,6 +4,7 @@
     height: 40px;
     width: 100vw;
     border: solid 1px rgb(194, 194, 194);
+    background-color: white;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -18,12 +19,15 @@
 }
 
 #drop {
-    padding: 10px 30px;
+    height: 20px;
+    padding: 5px 30px;
     margin-left: 100px;
+    margin-top: 4px;
     list-style: none;
     border: solid 1px rgb(184, 184, 184);
     border-radius: 15px;
     position: relative;
+    cursor: pointer;
 }
 
 #drop:hover .list {
@@ -33,12 +37,12 @@
 .list {
     display: none;
     position: absolute;
-    top: 40px;
-    left: 0px;
+    top: 32px;
+    left: -25%;
+    width: 150%;
     background-color: white;
     padding: 10px 0px;
     border: solid 1px rgb(189, 189, 189);
-    width: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(199, 199, 199);
     li {
@@ -48,4 +52,71 @@
     li:hover {
         background-color: rgb(204, 204, 204);
     }
+    li:hover .list2 {
+        display: block;
+    }
+}
+
+.list2 {
+    display: none;
+    position: absolute;
+    top: 12px;
+    left: 100%;
+    width: 50%;
+    background-color: white;
+    padding: 10px 0px;
+    border: solid 1px rgb(189, 189, 189);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(199, 199, 199);
+    li {
+        padding: 5px;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    li:hover .list3 {
+        display: block;
+    }
+}
+.list3 {
+    display: none;
+    position: absolute;
+    top: 12px;
+    left: 100%;
+    width: 50%;
+    background-color: white;
+    padding: 10px 0px;
+    border: solid 1px rgb(189, 189, 189);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(199, 199, 199);
+    li {
+        padding: 5px;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: rgb(204, 204, 204);
+    }
+}
+
+.two {
+    top: 40px;
+}
+
+.my_acc {
+    height: 20px;
+    padding: 5px 30px;
+    // margin-left: 100px;
+    margin-top: 4px;
+    list-style: none;
+    border: solid 1px rgb(184, 184, 184);
+    border-radius: 15px;
+    position: absolute;
+    right: 200px;
+
+    cursor: pointer;
+}
+
+.my_acc:hover .list {
+    display: inline;
 }

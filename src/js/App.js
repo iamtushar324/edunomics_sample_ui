@@ -1,25 +1,22 @@
 import React from 'react';
 import Landing from './containers/Landing';
 import Main from './containers/Main';
+import SignUp from './containers/SignUp';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
-	main = () => {
-		this.setState(() => {
-			return {
-				main: true
-			};
-		});
-	};
-
-	constructor(props) {
-		super(props);
-		this.state = {
-			main: false
-		};
-	}
-
 	render() {
-		return <div className="App">{this.state.main ? <Main /> : <Landing main={this.main} />}</div>;
+		return (
+			<BrowserRouter>
+				<div>
+					<Switch>
+						<Route path="/" component={Landing} exact={true} />
+						<Route path="/sign-up" component={SignUp} exact={true} />
+						<Route path="/DashBoard" component={Main} exact={true} />
+					</Switch>
+				</div>
+			</BrowserRouter>
+		);
 	}
 }
 
