@@ -8,7 +8,7 @@ export default class LoginBox extends React.Component {
 				<input type="text" id="login_username" />
 				<label htmlFor="username">Password</label>
 				<input type="text" id="login_password" />
-				<input type="button" value="Login" className="btn" />
+				<input onClick={this.props.main} type="button" value="Login" className="btn" />
 			</div>
 		);
 	}

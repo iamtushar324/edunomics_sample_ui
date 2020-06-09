@@ -6,7 +6,7 @@ export default class Landing extends React.Component {
 	render() {
 		return (
 			<div className="Landing">
-				<LandingTop />
+				<LandingTop main={this.props.main} />
 				<LandingMiddle />
 			</div>
 		);

@@ -1,12 +1,51 @@
-.MainSideBar {
-    width: 15vw;
-    background-color: brown;
-    height: 100vh;
-    padding: 10px;
-    text-align: center;
+.MainHeader {
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    width: 100vw;
+    border: solid 1px rgb(194, 194, 194);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+
+    span {
+        margin-left: 20px;
+        margin-top: 7px;
+        font-size: 1.3rem;
+    }
+}
+
+#drop {
+    padding: 10px 30px;
+    margin-left: 100px;
+    list-style: none;
+    border: solid 1px rgb(184, 184, 184);
+    border-radius: 15px;
+    position: relative;
+}
+
+#drop:hover .list {
+    display: inline;
+}
+
+.list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background-color: white;
+    padding: 10px 0px;
+    border: solid 1px rgb(189, 189, 189);
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(199, 199, 199);
     li {
-        list-style: none;
-        padding: 10px;
-        margin: 10px auto;
+        padding: 5px;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: rgb(204, 204, 204);
     }
 }

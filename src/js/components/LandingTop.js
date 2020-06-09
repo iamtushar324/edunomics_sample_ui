@@ -31,7 +31,7 @@ export default class LandingTop extends React.Component {
 						<li className="btn sign_btn">Sign Up</li>
 					</div>
 				</div>
-				{this.state.islogin ? <LoginBox /> : null}
+				{this.state.islogin ? <LoginBox main={this.props.main} /> : null}
 
 				<div className="landing_top_middle">
 					<h1>WHERE DO YOU WANT TO GO TODAY?</h1>
